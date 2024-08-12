@@ -9,12 +9,20 @@ body {
     max-width: 600px;
     margin: 0 auto;
 }
+/* 
+.color-picker {
+    border-color: #D1D5DB;
+    width: 200px;
 
-.color-preview {
+} */
+
+.color-picker {
+    appearance: none;
     width: 100%;
-    height: 100px;
-    background-color: #F55A5A;
-    margin-bottom: 20px;
+    height: 80px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .controls {
