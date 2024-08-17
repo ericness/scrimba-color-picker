@@ -40,7 +40,14 @@ select, button {
 .color-palette {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0;
+    height: calc(100vh - 240px);
+    margin-bottom: 20px;
+}
+
+.palette-block {
+    flex: 1;
+
 }
 
 .color-item {
