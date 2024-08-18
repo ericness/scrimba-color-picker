@@ -1,40 +1,42 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 1em;
     background-color: #f0f0f0;
 }
 
 .container {
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 auto;
 }
-/* 
-.color-picker {
-    border-color: #D1D5DB;
-    width: 200px;
 
-} */
+.color-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-bottom: 1em;
+}
 
 .color-picker {
     appearance: none;
-    width: 100%;
-    height: 80px;
+    height: 6em; 
     background-color: transparent;
     border: none;
     cursor: pointer;
-}
-
-.controls {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
+    flex: 1 1 4em;
 }
 
 select, button {
-    padding: 10px;
-    font-size: 16px;
+    padding: 0.75em;
+    font-size: 1rem;
+}
+
+.get-color-scheme {
+    flex: 1 1 7em;
+}
+
+.color-scheme {
+    flex: 1 1 7em;
 }
 
 .color-palette {
@@ -42,47 +44,29 @@ select, button {
     flex-direction: column;
     gap: 0;
     height: calc(100vh - 240px);
-    margin-bottom: 20px;
+    margin-bottom: 1em;
 }
 
 .palette-block {
     flex: 1;
-
-}
-
-.color-item {
     display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.color-box {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 @media (min-width: 768px) {
-    .controls {
-        flex-direction: row;
+    .color-controls {
+        flex-wrap: nowrap;
+    }
+
+    .get-color-scheme {
+        width: auto;
     }
 
     .color-palette {
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    .color-item {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .color-box {
-        width: 100px;
-        height: 100px;
-        margin-right: 0;
-        margin-bottom: 10px;
     }
 }
